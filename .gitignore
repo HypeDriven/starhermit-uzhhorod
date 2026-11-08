@@ -1,3 +1,7 @@
 game/.starhermit/
 node_modules/
 *.tar.gz
+
+publication.json
+
+artwork-source.png

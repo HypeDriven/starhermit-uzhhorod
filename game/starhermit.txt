@@ -1,5 +1,5 @@
-name=Uzhhorod — The River Remembers
-description=Explore Uzhhorod through historical mysteries and a changing town day. Gather records, craft river lights, host walks and curate a riverside exhibition from your discoveries.
+name=Uzhhorod
+description=Explore a living miniature of Uzhhorod, Ukraine. Restore landmark memories, solve historical mysteries, craft river lights and discover stories along the Uzh.
 launch=index.html
 engine.api=1
 engine.entry=src/main.ts
@@ -55,3 +55,6 @@ engine.link.archive1=https://www.uzhhorod-skansen.com/en/%D0%B4%D0%B5%D1%82%D0%B
 engine.link.archive2=https://www.zkmuseum.com/p/uzhhorod-castle-history.html
 
 control.workshop=KeyR | Riverside workshop
+
+cover=cover.jpg
+description.file=description.md

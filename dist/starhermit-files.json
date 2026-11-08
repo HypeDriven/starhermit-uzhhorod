@@ -5,9 +5,21 @@
       "size": 5446,
       "sha256": "420223151f78e03dcd339b760dab7100186564bdf01c98896c4e84d0920a6d16"
     },
+    "cover.jpg": {
+      "size": 920723,
+      "sha256": "89005c9f47c63b7325252843305ec60d2cf1261b3aec64b272c95b1a368a118d"
+    },
+    "description.md": {
+      "size": 900,
+      "sha256": "fe2e2b3d8787e840695669f25ddfdd64b03826f472a917e7cbf2739fb994418b"
+    },
+    "favicon.svg": {
+      "size": 518,
+      "sha256": "d4c4821798bc8b71c92c2e2d8c94971c3c437560b7d03531c05060de5bd65259"
+    },
     "index.html": {
-      "size": 2188,
-      "sha256": "8126c5a3879422f372dc937f38229c6721a8a4bd207d624db421ab3947e06475"
+      "size": 2340,
+      "sha256": "8fbd7b2e579ff5d4f0ebdbd1ede24123410e6a83d4c0b5adce64d8007f515d19"
     },
     "sources.html": {
       "size": 5481,
@@ -66,8 +78,8 @@
       "sha256": "8f7daf04e6925999ad9c1950d20403904292b7c2a71be23fe169db6ad312be81"
     },
     "starhermit.txt": {
-      "size": 2704,
-      "sha256": "d57d3862034dcb7f213638558c561f8178bda53d8d12d435160debc3af522aeb"
+      "size": 2713,
+      "sha256": "4d12b23c1996070e9e6543c751fa6e0fd5fda4aa71ab978b20112b2f95357b67"
     }
   }
 }

@@ -206,3 +206,9 @@ Evening Company checks complete a three-stop route with all guests and compare c
 Exhibition checks solve all three briefs through the actual input/state flow and verify provenance guards, collected-object gates, route connections, a quiet space, swapped captions, object leads, draft/open separation, saves, older progress, touch and panel bounds. The base route suite also covers the added pavilion approach. A temporary native fixture validates all briefs and saves, exercises the six new panels, and cycles through all display forms, lighting and route variants.
 
 Overlay panels were inspected in desktop and portrait render approximations. Full browser visual verification remains blocked by the private site’s sign-in gate; the internal HTTP preview is refused by StarHermit, and this container lacks a native GPU backend for offscreen rendering. Actual PNG capture, the 3D gathering, workshop fleet, hosted walks, exhibition and weather therefore remain unverified on a live GPU, while their control and failure paths are covered.
+
+## Production publication
+
+The Starhermit production title is **Uzhhorod**. The game manifest declares `cover=cover.jpg` and `description.file=description.md`; the generated loader uses `favicon.svg`. Cover-generation details are in [ARTWORK.md](ARTWORK.md).
+
+Rebuild the web package with `starhermit package --web game --out dist`, then run `python3 scripts/finish-web.py` to add page metadata and refresh the file integrity index. `publication.json` is an ignored local deployment receipt.
