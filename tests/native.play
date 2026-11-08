@@ -1,0 +1,21 @@
+# Run with STARHERMIT_RENDER_CHECK_PNG=/tmp/uzhhorod-review and
+# starhermit game --render-check --script tests/native.play
+ready
+expect Cast off
+save title
+click Cast off
+expect CHAPTER 01
+save introduction
+click Take to the water
+expect A river full of letters
+save river
+key KeyD 90
+key KeyJ 1
+expect LETTERS FROM THE RIVER
+save journal
+click Close
+key Escape 1
+expect A moment on the bank
+save pause
+click Return to the water
+expect A river full of letters

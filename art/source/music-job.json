@@ -1,0 +1,127 @@
+{
+  "job": {
+    "prompt_id": "6fddd50d-291f-4996-a210-9e4d488a17df",
+    "number": 1406,
+    "node_errors": {}
+  },
+  "workflow": {
+    "1": {
+      "class_type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "yue2_3b_bf16.safetensors"
+      }
+    },
+    "2": {
+      "class_type": "YuE2GenerateABC",
+      "inputs": {
+        "clip": [
+          "1",
+          1
+        ],
+        "style": "Instrumental acoustic chamber folk soundtrack for a quiet river journey, gentle felt piano, delicate nylon guitar, warm cello, soft brushed textures, nostalgic and hopeful, unhurried 72 BPM, no drums, no vocals, no singing, no speech",
+        "lyrics": "[Instrumental]\n[Instrumental]\n[Instrumental]",
+        "seed": 3817,
+        "mode": "full",
+        "max_abc_tokens": 4096,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 30,
+        "repetition_penalty": 1.005,
+        "penalty_window": 100
+      }
+    },
+    "3": {
+      "class_type": "YuE2GenerateMusic",
+      "inputs": {
+        "clip": [
+          "1",
+          1
+        ],
+        "abc": [
+          "2",
+          0
+        ],
+        "style": "Instrumental acoustic chamber folk soundtrack for a quiet river journey, gentle felt piano, delicate nylon guitar, warm cello, soft brushed textures, nostalgic and hopeful, unhurried 72 BPM, no drums, no vocals, no singing, no speech",
+        "lyrics": "[Instrumental]\n[Instrumental]\n[Instrumental]",
+        "seed": 3817,
+        "mode": "full",
+        "max_duration": 65,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 100,
+        "repetition_penalty": 1.2,
+        "cfg_scale": 1.0
+      }
+    },
+    "4": {
+      "class_type": "EmptyYuE2LatentAudio",
+      "inputs": {
+        "seconds": [
+          "3",
+          1
+        ],
+        "batch_size": 1
+      }
+    },
+    "5": {
+      "class_type": "ConditioningZeroOut",
+      "inputs": {
+        "conditioning": [
+          "3",
+          0
+        ]
+      }
+    },
+    "6": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "3",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "latent_image": [
+          "4",
+          0
+        ],
+        "seed": 3817,
+        "steps": 32,
+        "cfg": 1.0,
+        "sampler_name": "dpm_2",
+        "scheduler": "sgm_uniform",
+        "denoise": 1.0
+      }
+    },
+    "7": {
+      "class_type": "VAEDecodeAudio",
+      "inputs": {
+        "samples": [
+          "6",
+          0
+        ],
+        "vae": [
+          "1",
+          2
+        ]
+      }
+    },
+    "8": {
+      "class_type": "SaveAudioAdvanced",
+      "inputs": {
+        "audio": [
+          "7",
+          0
+        ],
+        "filename_prefix": "uzhhorod/after-the-rain",
+        "format": "flac"
+      }
+    }
+  }
+}

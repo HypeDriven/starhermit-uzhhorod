@@ -1,0 +1,17 @@
+{
+  "prompt": "A beautiful single miniature wooden river mail boat, three quarter elevated view from above, bow pointing toward the right of the image, isolated on plain white background. Elegant long pointed teal blue wooden hull with copper rubbing strake, honey colored wooden seats, a short ivory canvas canopy at the stern, a tiny brass lantern, a leather mail satchel and two cream envelopes inside. No people, no water, no scenery, no text. Handcrafted tactile model, subtle painted wood grain, refined charming European animation art direction. Whole boat in frame, clean silhouette, studio lighting, no cast shadow on background.",
+  "result": {
+    "images": [
+      {
+        "file": "20261108T103113-8e1444aa.png",
+        "url": "/outputs/20261108T103113-8e1444aa.png",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "seed": 3820,
+    "seconds": 77.5,
+    "steps": 28,
+    "edited": false
+  }
+}

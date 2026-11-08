@@ -1,0 +1,17 @@
+{
+  "prompt": "An exquisite hand-painted illustration for a literary indie adventure game. Rich gouache and oil pastel on textured paper, sophisticated atmospheric perspective, expressive brushwork, restrained small details, cinematic lighting, painterly European animation background. Wide landscape, looking across a broad calm river from a slightly elevated angle. The entire lower 55 percent of the image is open uninterrupted river water, deep petrol teal with long soft rippling reflections, no boats or people in this water. All buildings and trees are on the distant bank, above the center of the image. The horizon is at 35 percent from the top. No text, letters, lettering, UI, logos, borders or watermark. An imagined Uzhhorod riverside garden at blue hour after rain. An old pale pink greenhouse, a little ochre cottage, stone steps down to the water, very old weeping willows, lush tangled foliage and ivory flowers. A peach-lit cloud above deep lavender hills, tiny amber lamps glowing beneath trees. Lavender and sage, deep petrol blue water, salmon light. Enchanting but grounded, quiet and intimate.",
+  "result": {
+    "images": [
+      {
+        "file": "20261108T102759-d296bfb5.png",
+        "url": "/outputs/20261108T102759-d296bfb5.png",
+        "width": 1536,
+        "height": 1024
+      }
+    ],
+    "seed": 3818,
+    "seconds": 114.6,
+    "steps": 28,
+    "edited": false
+  }
+}

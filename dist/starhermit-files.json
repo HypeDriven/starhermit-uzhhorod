@@ -5,81 +5,73 @@
       "size": 5446,
       "sha256": "420223151f78e03dcd339b760dab7100186564bdf01c98896c4e84d0920a6d16"
     },
+    "assets/bridge.webp": {
+      "size": 341550,
+      "sha256": "47b892d8cb7915eff204b938452993bf1102322e2f93fe5c5563bdf4dc3f645c"
+    },
+    "assets/garden.webp": {
+      "size": 518866,
+      "sha256": "80534beee47529fa3c56f81268d97bc675696037e85cec4dfb1d79f30ee67072"
+    },
+    "assets/mailboat.glb": {
+      "size": 1478660,
+      "sha256": "83cb4af5481c88260727dcb388c60a0a23ec4684e978db18be46e9ff906c4069"
+    },
+    "assets/music.ogg": {
+      "size": 1403059,
+      "sha256": "04e3bb8ebeb4ad5a33325b475496f2b6ac08be6077f1abf7bf8ef0305c128496"
+    },
+    "assets/paper.ogg": {
+      "size": 33102,
+      "sha256": "98ae62aecd4b7887c76091df6c9c4a75b7594052bf9e2f8d2378395a2c73d819"
+    },
+    "assets/quay.webp": {
+      "size": 618848,
+      "sha256": "636d2b992c674e21fdfbda5c8aff62afdfe48e8571ddfff332960940700b2148"
+    },
+    "assets/water.ogg": {
+      "size": 187611,
+      "sha256": "53908c158d7c642c83eb794f3b25c7f08a4f52cf8e9b839b347ed549c189483e"
+    },
     "cover.jpg": {
-      "size": 920723,
-      "sha256": "89005c9f47c63b7325252843305ec60d2cf1261b3aec64b272c95b1a368a118d"
+      "size": 208116,
+      "sha256": "f0bb844a2857fa3121e7358590b30a39425a24497a3d38d318c557e096a36e86"
     },
     "description.md": {
-      "size": 900,
-      "sha256": "fe2e2b3d8787e840695669f25ddfdd64b03826f472a917e7cbf2739fb994418b"
+      "size": 1053,
+      "sha256": "aa080a96f7e49296f770271e8f65b0f57dc0e040ab55c5bb2684ca701502a6a6"
     },
     "favicon.svg": {
-      "size": 518,
-      "sha256": "d4c4821798bc8b71c92c2e2d8c94971c3c437560b7d03531c05060de5bd65259"
+      "size": 417,
+      "sha256": "a2709dc24d1f313414e2a7c9d4a5b08c3b71c06203f01b6ca8d7c9b467496019"
     },
     "index.html": {
-      "size": 2340,
-      "sha256": "8fbd7b2e579ff5d4f0ebdbd1ede24123410e6a83d4c0b5adce64d8007f515d19"
+      "size": 2145,
+      "sha256": "2646d3faaf671ec42da3b15dc5dbd7b404d5fea65254d87d75960152d99ddc28"
     },
-    "sources.html": {
-      "size": 5481,
-      "sha256": "50a226dc557734d0e42e9e219d4bc5ec73edeb528d961f654a868436214cdfc6"
-    },
-    "src/courier.ts": {
-      "size": 3354,
-      "sha256": "91abde360d8d25fa31dbb3e4d9668d1095c2b5b03486db4a95a439c0ef7d120a"
-    },
-    "src/eveningwalk.ts": {
-      "size": 7149,
-      "sha256": "b70808c70ecfd092a50353f06225dc9b555004299af7514561313e8b5a029302"
-    },
-    "src/exhibition.ts": {
-      "size": 8145,
-      "sha256": "5c241564dd66c6ddc569cd8fea81ca625feac06c45b5f84d1c9d136764c6711d"
-    },
-    "src/exploration.ts": {
-      "size": 4662,
-      "sha256": "29d6ca2a1b51db56030bd70ed12d317a65b8b06c493986ad98f283596277f6c0"
-    },
-    "src/fieldwork.ts": {
-      "size": 4010,
-      "sha256": "32a247074867f3ca32e38b2b42c1b94b2d01e0fcfeb925708ba84816b1e3eeaf"
-    },
-    "src/history.ts": {
-      "size": 4357,
-      "sha256": "d423598b4c71467ca57b30d7185b87ec468358abb2b1b8812ae047283d047166"
-    },
-    "src/investigation.ts": {
-      "size": 7274,
-      "sha256": "59db77688da3b7b4f1ddc443498554290bd44aea88af7dfd58d10475bbe98d47"
+    "src/chapters.ts": {
+      "size": 4410,
+      "sha256": "ca656a981c952223eb7f8da545ebe065430b314cf8b952cfa0e53f927d6767e9"
     },
     "src/main.ts": {
-      "size": 126094,
-      "sha256": "b2f4dbb10627ec6b0d41a0961b1f9898e3be87d1a1800c2ed9483e6bbaf2fe9b"
+      "size": 20712,
+      "sha256": "72151a1fc363f31b3e015a3ff3f9ca666f156cfd7ca7fa98a95973d436e173e4"
     },
-    "src/mechanics.ts": {
-      "size": 3413,
-      "sha256": "879a7f3fee5ffa26e8cc4b353a69b3541e9f3184bedbfca47b526ced3e803ff7"
+    "src/river.ts": {
+      "size": 4179,
+      "sha256": "59b4af857906c0c1671f11dccf8fed5200656bfa777b2c87bf5588eeafea5874"
     },
-    "src/stories.ts": {
-      "size": 4577,
-      "sha256": "557ee5005878a0ab46b594b64df25a37dc18d532583741c594829b8789f12737"
-    },
-    "src/townlife.ts": {
-      "size": 4409,
-      "sha256": "87cb9d0d8314344e5b899af62850558b94a74c2c84bfb3f5c2ef8851eb28cbf8"
-    },
-    "src/workshop.ts": {
-      "size": 6857,
-      "sha256": "8a9dc5ae9862b206d9a934906763a3e1a818361530de8f4d7480dbae60c236ab"
+    "src/sound.ts": {
+      "size": 1973,
+      "sha256": "877711f92bab23383914790878e3556d22c7d0751f7830e7ba131ecf94d13029"
     },
     "src/world.ts": {
-      "size": 45404,
-      "sha256": "8f7daf04e6925999ad9c1950d20403904292b7c2a71be23fe169db6ad312be81"
+      "size": 2788,
+      "sha256": "2ae7a9bafc5974780db044f217d4b57241a39bece980a3b1b30f0146daa4c32c"
     },
     "starhermit.txt": {
-      "size": 2713,
-      "sha256": "4d12b23c1996070e9e6543c751fa6e0fd5fda4aa71ab978b20112b2f95357b67"
+      "size": 1193,
+      "sha256": "eae727d10ab26e255d00095083e9f1c600ad3a71efe1fb66af8986ce1da7a79e"
     }
   }
 }
