@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "files": {
+    "LICENSE": {
+      "size": 5446,
+      "sha256": "420223151f78e03dcd339b760dab7100186564bdf01c98896c4e84d0920a6d16"
+    },
+    "index.html": {
+      "size": 2188,
+      "sha256": "8126c5a3879422f372dc937f38229c6721a8a4bd207d624db421ab3947e06475"
+    },
+    "sources.html": {
+      "size": 5481,
+      "sha256": "50a226dc557734d0e42e9e219d4bc5ec73edeb528d961f654a868436214cdfc6"
+    },
+    "src/courier.ts": {
+      "size": 3354,
+      "sha256": "91abde360d8d25fa31dbb3e4d9668d1095c2b5b03486db4a95a439c0ef7d120a"
+    },
+    "src/eveningwalk.ts": {
+      "size": 7149,
+      "sha256": "b70808c70ecfd092a50353f06225dc9b555004299af7514561313e8b5a029302"
+    },
+    "src/exhibition.ts": {
+      "size": 8145,
+      "sha256": "5c241564dd66c6ddc569cd8fea81ca625feac06c45b5f84d1c9d136764c6711d"
+    },
+    "src/exploration.ts": {
+      "size": 4662,
+      "sha256": "29d6ca2a1b51db56030bd70ed12d317a65b8b06c493986ad98f283596277f6c0"
+    },
+    "src/fieldwork.ts": {
+      "size": 4010,
+      "sha256": "32a247074867f3ca32e38b2b42c1b94b2d01e0fcfeb925708ba84816b1e3eeaf"
+    },
+    "src/history.ts": {
+      "size": 4357,
+      "sha256": "d423598b4c71467ca57b30d7185b87ec468358abb2b1b8812ae047283d047166"
+    },
+    "src/investigation.ts": {
+      "size": 7274,
+      "sha256": "59db77688da3b7b4f1ddc443498554290bd44aea88af7dfd58d10475bbe98d47"
+    },
+    "src/main.ts": {
+      "size": 126094,
+      "sha256": "b2f4dbb10627ec6b0d41a0961b1f9898e3be87d1a1800c2ed9483e6bbaf2fe9b"
+    },
+    "src/mechanics.ts": {
+      "size": 3413,
+      "sha256": "879a7f3fee5ffa26e8cc4b353a69b3541e9f3184bedbfca47b526ced3e803ff7"
+    },
+    "src/stories.ts": {
+      "size": 4577,
+      "sha256": "557ee5005878a0ab46b594b64df25a37dc18d532583741c594829b8789f12737"
+    },
+    "src/townlife.ts": {
+      "size": 4409,
+      "sha256": "87cb9d0d8314344e5b899af62850558b94a74c2c84bfb3f5c2ef8851eb28cbf8"
+    },
+    "src/workshop.ts": {
+      "size": 6857,
+      "sha256": "8a9dc5ae9862b206d9a934906763a3e1a818361530de8f4d7480dbae60c236ab"
+    },
+    "src/world.ts": {
+      "size": 45404,
+      "sha256": "8f7daf04e6925999ad9c1950d20403904292b7c2a71be23fe169db6ad312be81"
+    },
+    "starhermit.txt": {
+      "size": 2704,
+      "sha256": "d57d3862034dcb7f213638558c561f8178bda53d8d12d435160debc3af522aeb"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+name=Uzhhorod — The River Remembers
+description=Explore Uzhhorod through historical mysteries and a changing town day. Gather records, craft river lights, host walks and curate a riverside exhibition from your discoveries.
+launch=index.html
+engine.api=1
+engine.entry=src/main.ts
+engine.version=1.38.0
+engine.minor=38
+engine.capabilities=storage,platform
+engine.limits.meshes=4096
+control.start=Enter+Space | Begin or confirm
+control.back=Escape | Back
+control.journal=KeyJ | Field journal
+control.mute=KeyM | Toggle sound
+control.lens=KeyL | Memory lens
+control.orbitleft=ArrowLeft | Orbit left
+control.orbitright=ArrowRight | Orbit right
+control.zoomin=Equal | Zoom in
+control.zoomout=Minus | Zoom out
+control.site0=Digit1 | The castle
+control.site1=Digit2 | The synagogue
+control.site2=Digit3 | The living promenade
+control.site3=Digit4 | The crossing
+control.pick0=KeyZ | Choose top fragment
+control.pick1=KeyX | Choose middle fragment
+control.pick2=KeyC | Choose bottom fragment
+control.moveleft=KeyA | Walk or steer left
+control.moveright=KeyD | Walk or steer right
+control.moveup=KeyW+ArrowUp | Walk north or select root channel
+control.movedown=KeyS+ArrowDown | Walk south or select root channel
+control.pick3=KeyV | Fourth musical note
+control.map=KeyB | Map and residents requests
+control.compass=KeyF | Use the memory compass
+control.meet0=Digit5 | Visit Marta the bookbinder
+control.meet1=Digit6 | Visit Olena the gardener
+control.meet2=Digit7 | Visit Danylo the lamplighter
+control.fieldwork=KeyK | Heritage fieldwork and gathering
+control.courier=KeyG | Replayable city walks
+control.town=KeyT | Town clock, weather and day events
+control.notes=KeyN | Show field notes
+engine.gamepad.start=South
+engine.gamepad.back=East
+engine.gamepad.moveleft=LeftStickLeft
+engine.gamepad.moveright=LeftStickRight
+engine.link.source0=https://www.zkmuseum.com/p/uzhhorod-castle-history.html
+engine.link.source1=https://travel.rada-uzhgorod.gov.ua/?p=622
+engine.link.source2=https://travel.rada-uzhgorod.gov.ua/?p=636
+engine.link.source3=https://travel.rada-uzhgorod.gov.ua/?p=640
+engine.link.heritage0=https://zakarpat-rada.gov.ua/catalog/zakarpatskyj-muzej-narodnoyi-arhitektury-ta-pobutu/
+engine.link.heritage1=https://travel.rada-uzhgorod.gov.ua/?p=599
+cache..=0
+
+control.archive=KeyI | City archive and evidence board
+engine.link.archive0=https://travel.rada-uzhgorod.gov.ua/?p=640
+engine.link.archive1=https://www.uzhhorod-skansen.com/en/%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%D1%88%D0%B5-%D0%BF%D1%80%D0%BE-%D0%B5%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D1%96%D1%8E
+engine.link.archive2=https://www.zkmuseum.com/p/uzhhorod-castle-history.html
+
+control.workshop=KeyR | Riverside workshop
