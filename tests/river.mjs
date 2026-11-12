@@ -5,6 +5,9 @@ import vm from 'node:vm';
 const file=name=>readFileSync(new URL('../game/src/'+name,import.meta.url),'utf8');
 const load=async name=>import('data:text/javascript;base64,'+Buffer.from(stripTypeScriptTypes(file(name),{mode:'strip'})).toString('base64'));
 const river=await load('river.ts'),{chapters}=await load('chapters.ts');
+const {createTextTranslator}=await import('data:text/javascript;base64,'+Buffer.from(file('l10n/text-core.js')).toString('base64'));
+const messages=JSON.parse(readFileSync(new URL('../game/assets/strings.json',import.meta.url),'utf8'))['en-US'];
+const messageIndex=JSON.parse(readFileSync(new URL('../game/assets/localization/messages.json',import.meta.url),'utf8'));
 // Persistence accepts only bounded, finite state and never trusts a skipped chapter.
 assert.deepEqual(river.restoreRiver(null),river.blankRiver());
 assert.equal(river.restoreRiver({version:1,restored:[true,true,true,true]}).chapter,0);
@@ -20,8 +23,11 @@ const braking=river.blankRiver();braking.vx=100;river.advanceRiver(braking,.05,{
 
 function harness(width=1440,height=900,scale=1,stored=new Map()){
  const cb={},keys=new Set();let cameraX=720,visibleWidth=1440;
+ const display=createTextTranslator(messageIndex,(id,vars)=>{let value=messages[id];for(const[k,v]of Object.entries(vars||{}))value=value.replaceAll('{'+k+'}',v);return value;});
  const draw=new Proxy({measureText:(s,o)=>({width:s.length*o.size*.53,height:o.size})},{get:(o,k)=>o[k]??(()=>{})});
  const ctx=vm.createContext({...river,chapters,Math,Number,String,Boolean,Array,JSON,Promise,
+  __displayText:display.text,__keepDisplayText:display.keep,__wrapDisplay:display.wrap,
+  __l10nFont:value=>value,__l10nCanvasFont:value=>value,__l10nDrawOptions:value=>value,__l10nRender:render=>render,__installLanguageMenu(){},__l10nOptions(){},__l10nSetFont(){},__l10nStyles(){},
   frame:()=>({width:width*scale,height:height*scale,scale,delta:1/60}),onStart:f=>cb.start=f,onFixedUpdate:f=>cb.tick=f,onRender:f=>cb.render=f,setFixedRate(){},setReady(){},
   onPointerMove:f=>cb.move=f,onPointerButton:f=>cb.pointer=f,onTouch:f=>cb.touch=f,onAction:f=>cb.action=f,value:k=>keys.has(k)?1:0,setCursor(){},
   storage:{getJson:k=>stored.get(k),setJson:(k,v)=>stored.set(k,structuredClone(v))},

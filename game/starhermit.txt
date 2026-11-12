@@ -32,3 +32,7 @@ engine.gamepad.down=LeftStickDown
 engine.gamepad.interact=West
 engine.gamepad.journal=North
 cache..=0
+
+# Game language (saved per player); Automatic follows the account/device.
+control.localization=F2 | Language
+engine.group.localization=Interface
