@@ -13,6 +13,54 @@
       "size": 518866,
       "sha256": "80534beee47529fa3c56f81268d97bc675696037e85cec4dfb1d79f30ee67072"
     },
+    "assets/localization/CJK-OFL.txt": {
+      "size": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "assets/localization/Japanese.otf": {
+      "size": 289612,
+      "sha256": "d3fa9edb6a8d7253a194d2948a763f8604d0309a352756475786f0f8e2ab1705"
+    },
+    "assets/localization/Khmer-OFL.txt": {
+      "size": 4381,
+      "sha256": "be0407f060aea48787ff9e75d8d3aedef70aef113b3ce9aca26fdaacd10b1870"
+    },
+    "assets/localization/Khmer.ttf": {
+      "size": 64820,
+      "sha256": "b4b090a3f423a8b2dbc2f24170ceee9362b99e5ae1de956fe9b91297c1b11f3a"
+    },
+    "assets/localization/SimplifiedChinese.otf": {
+      "size": 266976,
+      "sha256": "c1940d0394435b4153aa96d136775ff39e071abbf69cfcc0e211ee40fe3ca4a7"
+    },
+    "assets/localization/Tamil-OFL.txt": {
+      "size": 4381,
+      "sha256": "f8ff8ce7d0a81bf8d5e121c635ef027250c531f2fd37d5988b8dd6e45f19d7f1"
+    },
+    "assets/localization/Tamil.ttf": {
+      "size": 42068,
+      "sha256": "c3f590a33e1e1d1cddc4f3664def6c6c3c809367e1b0441632cfee7d95db1525"
+    },
+    "assets/localization/TraditionalChinese.otf": {
+      "size": 380320,
+      "sha256": "9bd74b00881c9e3b0db434613457e8b508d43f8ec5c8c6e6059d65c076b95412"
+    },
+    "assets/localization/common.json": {
+      "size": 69321,
+      "sha256": "5fcb934321e7bd0c928c069cd966d678dcb849e258ab291b0541990e42e22d14"
+    },
+    "assets/localization/fonts.json": {
+      "size": 517,
+      "sha256": "37beaea0dba54c9f2c45995cbf9fd19fad21719d701718c41d7e58dd7748ca13"
+    },
+    "assets/localization/locales.json": {
+      "size": 1462,
+      "sha256": "46c43e4b764627275491d679ba470ccacb4753f6e81eca6e1adff90a5f520e51"
+    },
+    "assets/localization/messages.json": {
+      "size": 10311,
+      "sha256": "c07df765b3104f3da1e5fef19db1172a88e06f7b332a09d04b8173db251e36bf"
+    },
     "assets/mailboat.glb": {
       "size": 1478660,
       "sha256": "83cb4af5481c88260727dcb388c60a0a23ec4684e978db18be46e9ff906c4069"
@@ -28,6 +76,10 @@
     "assets/quay.webp": {
       "size": 618848,
       "sha256": "636d2b992c674e21fdfbda5c8aff62afdfe48e8571ddfff332960940700b2148"
+    },
+    "assets/strings.json": {
+      "size": 564381,
+      "sha256": "6ca72d3dfc727a2363b5fdf86e66d60d5e9cbd54eecbd840c51bc5cae16705fd"
     },
     "assets/water.ogg": {
       "size": 187611,
@@ -47,15 +99,35 @@
     },
     "index.html": {
       "size": 2145,
-      "sha256": "2646d3faaf671ec42da3b15dc5dbd7b404d5fea65254d87d75960152d99ddc28"
+      "sha256": "f7677528ac6f4eec3758e3c6015348aed98e26e04cc559c8811cd3d8d4419f7c"
     },
     "src/chapters.ts": {
       "size": 4410,
       "sha256": "ca656a981c952223eb7f8da545ebe065430b314cf8b952cfa0e53f927d6767e9"
     },
+    "src/l10n/font.ts": {
+      "size": 6298,
+      "sha256": "7f1628951943bd20cc3afa3ead0ad5ef2b5d9415683a7bd74953a40cbf5fd142"
+    },
+    "src/l10n/menu.ts": {
+      "size": 6317,
+      "sha256": "171e533d03753e0a0194559a1e96a4b91d8fe2d68d690825e4565f6d39d469ca"
+    },
+    "src/l10n/text-core.d.ts": {
+      "size": 493,
+      "sha256": "2aeca7cfe13545bda09e41d75b333672e5dd0296219afbab73673021b9783a72"
+    },
+    "src/l10n/text-core.js": {
+      "size": 6015,
+      "sha256": "503c33926ff106669f78859ecbc9e02a7dc3e7fc9584dccc5b29007e65d11166"
+    },
+    "src/l10n/text.ts": {
+      "size": 717,
+      "sha256": "22fbf223af9a8a5712cdd34677bd11c046f14589f34aa9840844f5db25e2e6f8"
+    },
     "src/main.ts": {
-      "size": 20712,
-      "sha256": "72151a1fc363f31b3e015a3ff3f9ca666f156cfd7ca7fa98a95973d436e173e4"
+      "size": 21275,
+      "sha256": "644217296513776ed819ea500fbba8580cf8206a68b68f7e7f7f281a6f85ae84"
     },
     "src/river.ts": {
       "size": 4179,
@@ -70,8 +142,8 @@
       "sha256": "2ae7a9bafc5974780db044f217d4b57241a39bece980a3b1b30f0146daa4c32c"
     },
     "starhermit.txt": {
-      "size": 1193,
-      "sha256": "eae727d10ab26e255d00095083e9f1c600ad3a71efe1fb66af8986ce1da7a79e"
+      "size": 1339,
+      "sha256": "320df173b6506ed456e3e579f11945aec8c983f45a7b2ee76f8242868daabd85"
     }
   }
 }

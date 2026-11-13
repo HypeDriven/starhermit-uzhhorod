@@ -5,7 +5,7 @@ import {createServer} from 'node:http';
 import {readFileSync,existsSync,mkdirSync} from 'node:fs';
 import {resolve,join,extname} from 'node:path';
 import {createRequire} from 'node:module';
-const root=resolve(process.argv[2]??'dist'),engine=resolve(process.argv[3]??'/home/albert/sh/starhermit-developer-wiki/engine/1.38.0');
+const root=resolve(process.argv[2]??'dist'),engine=resolve(process.argv[3]??'/home/albert/sh/starhermit-developer-wiki/engine/1.39.0');
 const shots=resolve(process.argv[4]??'/tmp/uzhhorod-browser');mkdirSync(shots,{recursive:true});
 const {chromium}=createRequire('/home/albert/.local/bin/node_modules/playwright-core/package.json')('playwright-core');
 const mime={'.html':'text/html','.js':'text/javascript','.json':'application/json','.wasm':'application/wasm','.ttf':'font/ttf','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.ogg':'audio/ogg','.glb':'model/gltf-binary'};
@@ -28,8 +28,8 @@ try{
   const page=await ctx.newPage(),errors=[];
   page.on('pageerror',e=>errors.push(e.message));
   page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
-  await page.route(/https:\/\/(engine|wiki)\.starhermit\.com\/engine\/1\.38\.0\/.*/,async route=>{
-   const path=new URL(route.request().url()).pathname.split('/1.38.0/')[1],file=join(engine,path);
+  await page.route(/https:\/\/(engine|wiki)\.starhermit\.com\/engine\/1\.39\.0\/.*/,async route=>{
+   const path=new URL(route.request().url()).pathname.split('/1.39.0/')[1],file=join(engine,path);
    assert.ok(existsSync(file),'missing official engine file '+path);
    await route.fulfill({status:200,body:readFileSync(file),headers:{'content-type':mime[extname(file)]??'application/octet-stream','access-control-allow-origin':'*'}});
   });

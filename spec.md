@@ -1,6 +1,6 @@
 # Uzhhorod: After the Rain
 
-Replace the former miniature-city simulation with a complete, visually coherent river adventure on StarHermit Engine 1.38.0.
+Replace the former miniature-city simulation with a complete, visually coherent river adventure on StarHermit Engine 1.39.0.
 
 The player pilots a mail boat through three painted river scenes, retrieves nine floating letters, delivers them to matching sealed landings, and chooses a short reply to each. Each completed chapter advances afternoon to blue hour to nightfall. The final delivery closes the story.
 

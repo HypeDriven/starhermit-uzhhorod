@@ -1,3 +1,9 @@
+import { localizedDrawOptions as __l10nDrawOptions } from "./l10n/font.js";
+import { withLanguageRender as __l10nRender } from "./l10n/menu.js";
+// localization-runtime:attached
+import { localizedFont as __l10nFont } from "./l10n/font.js";
+// display-localization:attached
+import { localizedText as __displayText, wrapDisplayText as __wrapDisplay, preserveUserText as __keepDisplayText } from "./l10n/text.js";
 import {frame,onStart,onFixedUpdate,onRender,setFixedRate,setReady} from 'starhermit:engine';
 import {onPointerMove,onPointerButton,onTouch,onAction,value,setCursor} from 'starhermit:input';
 import {storage} from 'starhermit:storage';
@@ -18,11 +24,10 @@ const f=(n:number)=>n*d;
 const rect=(x:number,y:number,a:number,b:number,color:string)=>draw.rect(f(x),f(y),f(a),f(b),color);
 const line=(x:number,y:number,a:number,b:number,color:string,width=1)=>draw.line(f(x),f(y),f(a),f(b),color,f(width));
 const ellipse=(x:number,y:number,a:number,b:number,color:string)=>draw.ellipse(f(x),f(y),f(a),f(b),color);
-function text(s:string,x:number,y:number,size=14,color=C.cream,font='sans-serif',align:'start'|'center'|'end'='start',tracking=0){draw.text(s,f(x),f(y),{size:f(size),font,color,align,letterSpacing:f(tracking)});}
+function text(s:string,x:number,y:number,size=14,color=C.cream,font='sans-serif',align:'start'|'center'|'end'='start',tracking=0){draw.text(__displayText(s),f(x),f(y),__l10nDrawOptions({size:f(size),font: __l10nFont(font),color,align,letterSpacing:f(tracking)}));}
 function wrap(s:string,x:number,y:number,maxWidth:number,size=17,color=C.muted,font='sans-serif',leading=1.65){
- const words=s.split(' ');let row='',rows=0;
- for(const word of words){const test=row?row+' '+word:word;if(row&&draw.measureText(test,{size:f(size),font}).width>f(maxWidth)){text(row,x,y+rows*size*leading,size,color,font);row=word;rows++;}else row=test;}
- if(row){text(row,x,y+rows*size*leading,size,color,font);rows++;}return rows*size*leading;
+ const lines=__wrapDisplay(s,maxWidth,value=>draw.measureText(__displayText(__keepDisplayText(value)),__l10nDrawOptions({size:f(size),font: __l10nFont(font)})).width/f(1));
+ lines.forEach((line,i)=>text(line,x,y+i*size*leading,size,color,font));return lines.length*size*leading;
 }
 function button(label:string,x:number,y:number,bw:number,bh:number,act:()=>void,primary=false){
  const hover=mx>=x&&mx<=x+bw&&my>=y&&my<=y+bh;
@@ -66,7 +71,7 @@ function clickAt(x:number,y:number){
 }
 onStart(()=>{
  setFixedRate(60);try{state=restoreRiver(storage.getJson(SAVE));}catch{state=blankRiver();}
- setReady(false,{label:'painted river scenes and mail boat',seconds:60});
+ setReady(false,{label:__displayText('painted river scenes and mail boat'),seconds:60});
  void createWorld().then(()=>{if(worldReady)setReady(true);});void loadSound().then(()=>{soundReady=true;});
 });
 onPointerMove((x,y)=>{mx=x/d;my=y/d;if(held&&mode==='sail')aim(mx,my);});
@@ -243,7 +248,7 @@ function paused(){
  text('An imagined evening in Uzhhorod.',w/2,b.y+b.h-49,12,C.muted,'serif','center');
 }
 function reset(){const b=panel(470),x=b.x+b.pad,iw=b.w-b.pad*2; text('Begin again?',x,b.y+70,37,C.cream,'serif');wrap('This starts a new river journey and clears these nine deliveries.',x,b.y+143,iw,18,C.muted);button('Keep this journey',x,b.y+b.h-145,iw,47,()=>change('pause'),true);button('Start a new journey',x,b.y+b.h-86,iw,43,()=>{const muted=state.muted,gentle=state.gentle;state=blankRiver();state.muted=muted;state.gentle=gentle;save();change('intro');});}
-onRender(()=>{
+onRender(__l10nRender(()=>{
  const v=frame();d=v.scale*Math.min(1,(v.height/v.scale)/760);if(d<=0)return;w=v.width/d;h=v.height/d;buttons=[];
  updateWorld(state,w,h,v.delta,mode==='title');atmosphere();
  if(mode==='sail'){riverObjects();hud();}
@@ -253,4 +258,8 @@ onRender(()=>{
  }
  if(fade>0)rect(0,0,w,h,`rgba(239,222,185,${fade*.3})`);
  setCursor(buttons.some(b=>mx>=b.x&&mx<=b.x+b.w&&my>=b.y&&my<=b.y+b.h)?'pointer':mode==='sail'?'crosshair':'default');
-});
+}));
+
+// localization-runtime:menu
+import { installLanguageMenu as __installLanguageMenu } from "./l10n/menu.js";
+__installLanguageMenu(true);

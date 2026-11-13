@@ -16,7 +16,7 @@ Progress saves locally every two seconds and after deliveries. This new game use
 
 ## Develop
 
-Requires the official **StarHermit Engine 1.38.0**, Node.js 24+, and TypeScript.
+Requires the official **StarHermit Engine 1.39.0**, Node.js 24+, and TypeScript.
 
 ```sh
 starhermit types game
@@ -32,7 +32,7 @@ python3 scripts/finish-web.py
 
 The gameplay tests complete all nine deliveries through the real steering model and entry-point state machine. They also cover bounds, reed drag, braking, chapter gates, invalid saves, reloads, legacy-save isolation, paused time, reset cancellation, touch input, and responsive control bounds.
 
-Native visual checks use `starhermit game --render-check --script tests/native.play`. The browser smoke runner is `node tests/web.mjs dist /path/to/engine/1.38.0`; it uses this workstation's Playwright/Chrome tooling. Native rendering and desktop/phone browser checks pass, including a browser delivery. The finished web package is approximately 4.6 MiB.
+Native visual checks use `starhermit game --render-check --script tests/native.play`. The browser smoke runner is `node tests/web.mjs dist /path/to/engine/1.39.0`; it uses this workstation's Playwright/Chrome tooling. Native rendering and desktop/phone browser checks pass, including a browser delivery. The finished web package is approximately 4.6 MiB.
 
 Publish with `node scripts/publish.mjs` after committing and pushing to `origin/main`. It uploads exactly the committed `dist/`, updates the existing listing and its cover, verifies every live file against the integrity index, and records the release in ignored `publication.json`. Credentials come from `STARHERMIT_PUBLIC_KEY` / `STARHERMIT_PRIVATE_KEY` or `STARHERMIT_ENV_FILE` (defaults to the parent directory's `.env`). `--dry-run` validates the committed package without publishing.
 
