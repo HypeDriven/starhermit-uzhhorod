@@ -1,5 +1,7 @@
 # Uzhhorod: After the Rain
 
+**[▶ Play Uzhhorod on StarHermit](https://dashboard.starhermit.com/play/aa9ff15f-c11a-4b7a-9d08-09c220917078)**
+
 A quiet river adventure rebuilt around painted scenery, a textured mail boat, and nine lost letters. Sail an imagined stretch of the Uzh through late afternoon, blue hour, and nightfall. Recover each envelope, match its seal to a landing, and leave a small reply.
 
 [Title screen](art/previews/title.jpg) · [River view](art/previews/river.jpg) · [Phone view](art/previews/phone.jpg) · [A letter](art/previews/letter.jpg)
