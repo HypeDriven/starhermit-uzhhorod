@@ -65,6 +65,10 @@
       "size": 1478660,
       "sha256": "83cb4af5481c88260727dcb388c60a0a23ec4684e978db18be46e9ff906c4069"
     },
+    "assets/mailboat.glb.ktx2.glb": {
+      "size": 1716396,
+      "sha256": "e319fc253dd48868ad8231542b1a99584a9bdec356be4b6df9d57269f6dffffd"
+    },
     "assets/music.ogg": {
       "size": 1403059,
       "sha256": "04e3bb8ebeb4ad5a33325b475496f2b6ac08be6077f1abf7bf8ef0305c128496"
@@ -98,8 +102,8 @@
       "sha256": "a2709dc24d1f313414e2a7c9d4a5b08c3b71c06203f01b6ca8d7c9b467496019"
     },
     "index.html": {
-      "size": 2145,
-      "sha256": "f7677528ac6f4eec3758e3c6015348aed98e26e04cc559c8811cd3d8d4419f7c"
+      "size": 1987,
+      "sha256": "23491afda3f63ff905d6fef02dc7133d2f42e90c6f342844f270aba6fcc5f71a"
     },
     "src/chapters.ts": {
       "size": 4410,
@@ -142,8 +146,8 @@
       "sha256": "2ae7a9bafc5974780db044f217d4b57241a39bece980a3b1b30f0146daa4c32c"
     },
     "starhermit.txt": {
-      "size": 1339,
-      "sha256": "320df173b6506ed456e3e579f11945aec8c983f45a7b2ee76f8242868daabd85"
+      "size": 1435,
+      "sha256": "1035e1a51d61cf09e99b6c47eca119d32a7de6618929c282e19a48be2cb7ea82"
     }
   }
 }
