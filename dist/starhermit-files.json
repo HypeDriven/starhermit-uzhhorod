@@ -103,7 +103,7 @@
     },
     "index.html": {
       "size": 1987,
-      "sha256": "23491afda3f63ff905d6fef02dc7133d2f42e90c6f342844f270aba6fcc5f71a"
+      "sha256": "5eb73fdda6b48b7431ff67cf0ee53659f14f29834fa0a5f173faad2d4f6fa32f"
     },
     "src/chapters.ts": {
       "size": 4410,
@@ -142,12 +142,12 @@
       "sha256": "877711f92bab23383914790878e3556d22c7d0751f7830e7ba131ecf94d13029"
     },
     "src/world.ts": {
-      "size": 2788,
-      "sha256": "2ae7a9bafc5974780db044f217d4b57241a39bece980a3b1b30f0146daa4c32c"
+      "size": 3055,
+      "sha256": "8b1d7cdd08fc3912dcfccd39190bd1b7c2d53073b4535af54dd137b27e4e9cfc"
     },
     "starhermit.txt": {
-      "size": 1435,
-      "sha256": "1035e1a51d61cf09e99b6c47eca119d32a7de6618929c282e19a48be2cb7ea82"
+      "size": 1458,
+      "sha256": "2b02207a713f7b34693eec2f7b0bea1bf95afeec182d6d00617d7fb723feb820"
     }
   }
 }

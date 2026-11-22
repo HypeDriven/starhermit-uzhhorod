@@ -1,8 +1,9 @@
+import {frame} from 'starhermit:engine';
 import {scene,renderer,Color,Group,Mesh,PlaneGeometry,MeshBasicMaterial,OrthographicCamera,TextureLoader,GLTFLoader,AmbientLight,DirectionalLight,Box3,Vector3,SRGBColorSpace,NoToneMapping} from 'starhermit:scene';
 import type {RiverState} from './river.js';
 const camera=new OrthographicCamera(-720,720,450,-450,.1,3000),boat=new Group();
 const backgrounds:Mesh<MeshBasicMaterial>[]=[];
-let cameraX=720,visibleWidth=1440;
+let cameraX=720,visibleWidth=1440,motionQuality='';
 let hull:Group|null=null;
 export let worldReady=false,worldError='';
 export async function createWorld(){
@@ -26,6 +27,7 @@ export async function createWorld(){
 }
 export function updateWorld(s:RiverState,w:number,h:number,dt:number,title:boolean){
  visibleWidth=Math.min(1900,900*w/h);
+ const quality=frame().quality;if(quality!==motionQuality){motionQuality=quality;renderer.motionBlur=quality==='high'||quality==='ultra'?{intensity:.25,samples:8,maxPixels:16,targetFps:60,camera:false}:null;}
  const desired=title?720:Math.max(visibleWidth/2,Math.min(1440-visibleWidth/2,s.x));
  cameraX+=(desired-cameraX)*Math.min(1,dt*5);if(visibleWidth>=1440)cameraX=720;
  camera.left=-visibleWidth/2;camera.right=visibleWidth/2;camera.updateProjectionMatrix();camera.position.x=cameraX-720;
