@@ -1,0 +1,6 @@
+# file | event id | description | context
+../assets/music.ogg | music | Evening river music bed | Loop after the first interaction
+../assets/water.ogg | water | Quiet river water | Ambient loop during the journey
+../assets/paper.ogg | paper | Paper rustle | Letters and delivery interactions
+delivery chime (synthesized) | delivery | Rising three-note delivery chime | Mail delivered
+journal chime (synthesized) | journal | Two-note paper chime | Journal and non-delivery chimes

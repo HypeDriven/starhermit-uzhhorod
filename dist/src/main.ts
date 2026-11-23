@@ -1,3 +1,4 @@
+import { showCursor } from "./cursor.js";
 import { localizedDrawOptions as __l10nDrawOptions } from "./l10n/font.js";
 import { withLanguageRender as __l10nRender } from "./l10n/menu.js";
 // localization-runtime:attached
@@ -70,7 +71,7 @@ function clickAt(x:number,y:number){
  if(mode==='sail'){aim(x,y);return false;}return false;
 }
 onStart(()=>{
- setFixedRate(60);try{state=restoreRiver(storage.getJson(SAVE));}catch{state=blankRiver();}
+ showCursor();setFixedRate(60);try{state=restoreRiver(storage.getJson(SAVE));}catch{state=blankRiver();}
  setReady(false,{label:__displayText('painted river scenes and mail boat'),seconds:60});
  void createWorld().then(()=>{if(worldReady)setReady(true);});void loadSound().then(()=>{soundReady=true;});
 });
@@ -257,7 +258,7 @@ onRender(__l10nRender(()=>{
   const bw=Math.min(w-36,620),hh=55;draw.roundRect(f((w-bw)/2),f(145),f(bw),f(hh),f(4),'rgba(14,38,39,.92)');wrap(toast,(w-bw)/2+18,161,bw-36,12,C.paper,'sans-serif',1.4);
  }
  if(fade>0)rect(0,0,w,h,`rgba(239,222,185,${fade*.3})`);
- setCursor(buttons.some(b=>mx>=b.x&&mx<=b.x+b.w&&my>=b.y&&my<=b.y+b.h)?'pointer':mode==='sail'?'crosshair':'default');
+ if(buttons.some(b=>mx>=b.x&&mx<=b.x+b.w&&my>=b.y&&my<=b.y+b.h))setCursor('pointer');else if(mode==='sail')setCursor('crosshair');else showCursor();
 }));
 
 // localization-runtime:menu
