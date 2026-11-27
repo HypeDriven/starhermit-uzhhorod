@@ -1,6 +1,6 @@
 # Uzhhorod: After the Rain
 
-Replace the former miniature-city simulation with a complete, visually coherent river adventure on StarHermit Engine 1.47.0.
+Replace the former miniature-city simulation with a complete, visually coherent river adventure on StarHermit Engine 1.53.0.
 
 The player pilots a mail boat through three painted river scenes, retrieves nine floating letters, delivers them to matching sealed landings, and chooses a short reply to each. Each completed chapter advances afternoon to blue hour to nightfall. The final delivery closes the story.
 
@@ -19,3 +19,5 @@ Authored UI text, canvas labels, selector options and composed messages resolve 
 The language panel opens with F2, saves the player’s choice and offers Automatic to follow the account or device language. Packaged script fonts apply to both native and browser text.
 
 <!-- display-localization:end -->
+
+On engine 1.53.0, browser play through WebGL 2 compiles a frame's shader programs together and holds that frame until they are linked, blends skinned meshes in one pass, reuses the window pass's depth, and uses a hardware WebGL 2 context when WebGPU's adapter is software.
